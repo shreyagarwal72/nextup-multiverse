@@ -74,8 +74,8 @@ const Index = () => {
             <div className="relative inline-block">
               <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full scale-110" />
               <h1 className="relative text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tight">
-                <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent animate-glow">
-                  Nextup Universe
+                <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
+                  Nextup Multiverse
                 </span>
               </h1>
             </div>
@@ -87,14 +87,14 @@ const Index = () => {
           
           <p className="text-base md:text-lg text-muted-foreground/90 max-w-3xl mx-auto leading-relaxed px-4">
             Welcome to the official digital hub of <span className="text-primary font-semibold">Nextup Studio</span> by Vanshu. 
-            Explore six interconnected creative worlds through our cosmic portals.
+            Explore six interconnected creative worlds through our multiverse portals.
           </p>
         </header>
 
         {/* Portal Grid with improved spacing */}
         <section 
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10 max-w-7xl mx-auto px-4"
-          aria-label="Nextup Universe Portal Navigation"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 max-w-7xl mx-auto px-4"
+          aria-label="Nextup Multiverse Portal Navigation"
         >
           {portals.map((portal, index) => (
             <article
@@ -110,21 +110,19 @@ const Index = () => {
           ))}
         </section>
 
-        {/* Professional Footer */}
-        <footer className="mt-24 md:mt-32 text-center space-y-4">
+        {/* Premium iOS-style Footer */}
+        <footer className="mt-24 md:mt-32 text-center space-y-3">
           <div className="inline-flex items-center gap-3 text-muted-foreground">
-            <Sparkles className="w-5 h-5 text-primary animate-twinkle" />
+            <Sparkles className="w-4 h-4 text-primary animate-twinkle" />
             <p className="text-sm md:text-base">
-              Crafted with creativity by{" "}
-              <span className="text-primary font-bold">Vanshu</span>
-              {" "}·{" "}
-              <span className="text-foreground/70">Nextup Studio</span>
+              Crafted by{" "}
+              <span className="text-primary font-semibold">Vanshu</span>
             </p>
-            <Sparkles className="w-5 h-5 text-secondary animate-twinkle" style={{ animationDelay: "1.5s" }} />
+            <Sparkles className="w-4 h-4 text-secondary animate-twinkle" style={{ animationDelay: "1.5s" }} />
           </div>
           
-          <p className="text-xs text-muted-foreground/60">
-            © {new Date().getFullYear()} Nextup Universe. All portals lead to creativity.
+          <p className="text-xs text-muted-foreground/70 font-medium tracking-wide">
+            © 2025 Nextup Studio. All rights reserved.
           </p>
         </footer>
       </div>

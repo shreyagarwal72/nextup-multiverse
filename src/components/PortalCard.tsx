@@ -15,35 +15,37 @@ const PortalCard = ({ icon, title, description, href, gradient }: PortalCardProp
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="group block transform transition-all duration-500 hover:scale-[1.02] focus:scale-[1.02] focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-xl"
+      className="group block transition-all duration-300 hover:-translate-y-1 focus:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 rounded-2xl"
       aria-label={`Visit ${title}: ${description}`}
     >
-      <Card className="relative overflow-hidden border-2 border-border/40 bg-card/60 backdrop-blur-md hover:border-primary/60 hover:shadow-portal transition-all duration-500 h-full">
-        <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-0 group-hover:opacity-30 transition-opacity duration-500`} />
+      <Card className="relative overflow-hidden border border-white/10 bg-card/70 backdrop-blur-glass hover:border-white/20 hover:shadow-premium transition-all duration-300 h-full rounded-2xl">
+        {/* Glassmorphism overlay */}
+        <div className="absolute inset-0 bg-glass opacity-60" />
+        <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-0 group-hover:opacity-20 transition-opacity duration-300`} />
         
-        <div className="relative p-8 flex flex-col items-center text-center space-y-5 h-full">
-          {/* Icon with enhanced glow */}
+        <div className="relative p-7 md:p-8 flex flex-col items-center text-center space-y-5 h-full">
+          {/* Icon with soft glow */}
           <div className="relative flex-shrink-0">
-            <div className="absolute inset-0 bg-primary/30 blur-2xl rounded-full group-hover:blur-3xl group-hover:bg-primary/40 transition-all duration-500" />
-            <div className="relative w-20 h-20 flex items-center justify-center text-primary group-hover:text-secondary group-hover:scale-110 transition-all duration-500 animate-float">
+            <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl group-hover:blur-2xl group-hover:bg-primary/30 transition-all duration-300" />
+            <div className="relative w-16 h-16 md:w-20 md:h-20 flex items-center justify-center text-primary group-hover:text-secondary group-hover:scale-105 transition-all duration-300">
               {icon}
             </div>
           </div>
 
           {/* Content */}
-          <div className="space-y-3 flex-grow flex flex-col justify-center">
-            <h3 className="text-xl md:text-2xl font-bold text-foreground group-hover:text-primary transition-colors duration-300 leading-tight">
+          <div className="space-y-2.5 flex-grow flex flex-col justify-center">
+            <h3 className="text-lg md:text-xl font-semibold text-foreground group-hover:text-primary transition-colors duration-300 leading-tight tracking-tight">
               {title}
             </h3>
-            <p className="text-sm md:text-base text-muted-foreground group-hover:text-foreground/90 transition-colors duration-300 leading-relaxed">
+            <p className="text-sm text-muted-foreground/90 group-hover:text-foreground/80 transition-colors duration-300 leading-relaxed">
               {description}
             </p>
           </div>
 
-          {/* Call to action */}
-          <div className="pt-3 text-sm font-medium text-primary/70 group-hover:text-primary transition-colors duration-300 flex items-center gap-2">
-            <span>Enter Portal</span>
-            <span className="inline-block transform group-hover:translate-x-1 transition-transform duration-300 text-lg">→</span>
+          {/* Minimal call to action */}
+          <div className="pt-2 text-xs font-medium text-primary/60 group-hover:text-primary transition-all duration-300 flex items-center gap-1.5">
+            <span className="tracking-wide">Enter</span>
+            <span className="inline-block transform group-hover:translate-x-0.5 transition-transform duration-300">→</span>
           </div>
         </div>
       </Card>

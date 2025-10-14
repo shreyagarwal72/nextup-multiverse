@@ -1,16 +1,16 @@
-# Nextup Universe 🌌
+# Nextup Multiverse 🌌
 
 **The Official Digital Hub of Nextup Studio by Vanshu**
 
-Welcome to Nextup Universe - a futuristic, SEO-optimized portal connecting multiple creative worlds including music, gaming, YouTube content, premium archives, and powerful web tools.
+Welcome to Nextup Multiverse - a premium iOS-inspired portal connecting multiple creative worlds including music, gaming, YouTube content, premium archives, and powerful web tools.
 
 ## 🚀 Live Site
 
-Visit: [Nextup Universe](https://nextup-universe.vercel.app/)
+Visit: [Nextup Multiverse](https://nextup-multiverse.vercel.app/)
 
 ## ✨ Features
 
-- **Cinematic Space-Themed Design** - Immersive cosmic aesthetic with animated starfields
+- **Premium iOS-Inspired Design** - Glassmorphism, refined shadows, and elegant spacing
 - **6 Interactive Portals** - Links to all Nextup Studio projects:
   - Main Site
   - Minecraft World
@@ -35,7 +35,7 @@ Visit: [Nextup Universe](https://nextup-universe.vercel.app/)
 ## 📦 Project Structure
 
 ```
-nextup-universe/
+nextup-multiverse/
 ├── src/
 │   ├── components/
 │   │   ├── StarField.tsx      # Animated star background
@@ -52,12 +52,13 @@ nextup-universe/
 
 ## 🎨 Design System
 
-The project uses a cosmic theme with:
-- **Primary Color**: Cyan Neon (#00f0ff)
-- **Secondary Color**: Purple Neon (#a855f7)
-- **Background**: Deep Space Navy
-- **Custom Gradients**: Cosmic glows and portal effects
-- **Animations**: Float, glow, twinkle, and fade effects
+Premium iOS-inspired theme with:
+- **Glassmorphism**: Frosted glass effects with backdrop blur
+- **Primary Color**: Refined Cyan (#00d4ff)
+- **Secondary Color**: Elegant Purple (#a855f7)
+- **Background**: Deep Space with premium overlays
+- **Soft Shadows**: iOS-style elevation and depth
+- **Smooth Animations**: Refined, subtle transitions
 
 ## 🚀 Getting Started
 
@@ -72,7 +73,7 @@ The project uses a cosmic theme with:
 git clone <YOUR_GIT_URL>
 
 # Navigate to project directory
-cd nextup-universe
+cd nextup-multiverse
 
 # Install dependencies
 npm install
@@ -115,7 +116,7 @@ Content Creator, Music Producer & Developer
 
 ## 📄 License
 
-This project is created for Nextup Studio. All rights reserved.
+© 2025 Nextup Studio. All rights reserved.
 
 ## 🔗 Links
 

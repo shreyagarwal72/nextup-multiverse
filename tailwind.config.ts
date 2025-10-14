@@ -49,14 +49,15 @@ export default {
         },
       },
       backgroundImage: {
-        'gradient-cosmic': 'var(--gradient-cosmic)',
-        'gradient-glow': 'var(--gradient-glow)',
-        'gradient-portal': 'var(--gradient-portal)',
+        'glass': 'linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02))',
       },
       boxShadow: {
-        'glow-cyan': 'var(--glow-cyan)',
-        'glow-purple': 'var(--glow-purple)',
-        'portal': 'var(--shadow-portal)',
+        'glass': 'var(--glass-shadow)',
+        'glow-soft': 'var(--glow-primary-soft)',
+        'premium': 'var(--shadow-premium)',
+      },
+      backdropBlur: {
+        'glass': '24px',
       },
       borderRadius: {
         lg: "var(--radius)",
