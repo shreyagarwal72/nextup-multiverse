@@ -42,8 +42,8 @@ const Index = () => {
     },
     {
       icon: <Sparkles className="w-full h-full" />,
-      title: "Extended Hub",
-      description: "Advanced tools and expanded features",
+      title: "More Webtools",
+      description: "Additional utilities and creative instruments",
       href: "https://nextuptool2.vercel.app/",
       gradient: "from-fuchsia-500/20 to-pink-500/20",
     },
