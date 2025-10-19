@@ -1,7 +1,9 @@
-import StarField from "@/components/StarField";
-import PortalCard from "@/components/PortalCard";
+import { lazy, Suspense } from "react";
 import { Globe, Gamepad2, Youtube, Archive, Wrench, Sparkles } from "lucide-react";
-import cosmicBg from "@/assets/cosmic-bg.jpg";
+import cosmicBg from "@/assets/cosmic-bg.webp";
+
+const StarField = lazy(() => import("@/components/StarField"));
+const PortalCard = lazy(() => import("@/components/PortalCard"));
 
 const Index = () => {
   const portals = [
@@ -60,7 +62,9 @@ const Index = () => {
         }}
       />
       <div className="fixed inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background/90" />
-      <StarField />
+      <Suspense fallback={null}>
+        <StarField />
+      </Suspense>
       
       {/* Refined Ambient Glow Effects */}
       <div className="fixed top-1/3 left-1/4 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[150px] animate-glow pointer-events-none" />
@@ -96,18 +100,20 @@ const Index = () => {
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 max-w-7xl mx-auto px-4"
           aria-label="Nextup Multiverse Portal Navigation"
         >
-          {portals.map((portal, index) => (
-            <article
-              key={portal.title}
-              className="animate-fade-in"
-              style={{ 
-                animationDelay: `${index * 0.1}s`, 
-                animationFillMode: "both" 
-              }}
-            >
-              <PortalCard {...portal} />
-            </article>
-          ))}
+          <Suspense fallback={<div className="min-h-[200px]" />}>
+            {portals.map((portal, index) => (
+              <article
+                key={portal.title}
+                className="animate-fade-in"
+                style={{ 
+                  animationDelay: `${index * 0.1}s`, 
+                  animationFillMode: "both" 
+                }}
+              >
+                <PortalCard {...portal} />
+              </article>
+            ))}
+          </Suspense>
         </section>
 
         {/* Premium iOS-style Footer */}
