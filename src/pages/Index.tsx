@@ -11,7 +11,7 @@ const Index = () => {
       icon: <Globe className="w-full h-full" />,
       title: "Main Site",
       description: "Explore the complete Nextup Studio experience",
-      href: "https://vanshubhai.vercel.app/",
+      href: "https://nextup-studio.vercel.app/",
       gradient: "from-cyan-500/20 to-blue-500/20",
     },
     {
